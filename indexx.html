@@ -17,7 +17,7 @@
 
     </style>
     <div class="jumbotron">
-        <h1 class="display-4">Fisica 1</h1>
+        <h1 class="display-4" style="color:rgb(54, 115, 136)">Fisica 1</h1>
         <p class="lead">La física, del griego fisis («naturaleza»), es la ciencia natural que estudia, mediante leyes fundamentales, la energía, la materia, el tiempo y el espacio, es decir, el universo mismo.</p>
         <form id="formulario">
             <label for="distancia">Distancia:</label>
@@ -27,7 +27,7 @@
             <option value="pies">pies</option>
            </select>
            <br>
-           <label for="tiempo">tiempo:</label>
+           <label for="tiempo">Tiempo:</label>
            <input type="text" id="tiempo" name="tiempo">
            <select id="tiempoUnidad">
             <option value="segundos">segundos</option>
@@ -42,16 +42,16 @@
             <option value="millas_por_hora">mph/h</option>
            </select>
            <br>
-           <input type="button" value="calcular" onclick="calcular()">
+           <input type="button" value="calcular" onclick="calcular()" style="background-color: #b5e4ec;">
         </form>
-        <p style="color:rgb(98, 196, 226)">Velocidad: <span id="velocidad"></span></p>
-        <p style="color:rgb(98, 196, 226)">Aceleracion: <span id="aceleracion"></span></p>
-        <p style="color:rgb(98, 196, 226)">Rapidez: <span id="rapidez"></span></p>
+        <p style="color:rgb(50, 129, 153)">Velocidad: <span id="velocidad"></span></p>
+        <p style="color:rgb(81, 167, 194)">Aceleracion: <span id="aceleracion"></span></p>
+        <p style="color:rgb(50, 129, 153)">Rapidez: <span id="rapidez"></span></p>
         
     </div>
     <script>
         function calcular(){
-            const distancia=parseFloat(document.getElementById('distancia').value);
+            const distancia=parseFloat(document.getElementById('distancia'),value);
             console.log("la distancia es: "+distancia);
             document.getElementById('velocidad').textContent=velocidad.tofixed(2)+distancia;
         }
